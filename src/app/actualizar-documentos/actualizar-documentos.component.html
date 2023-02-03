@@ -1,0 +1,13 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Edición de tipo de Documento</h3>
+    <form (ngSubmit)="onSubmit()" #documentosForm="ngForm">
+        <div class="form-group">
+            <label>Descripcion: </label>
+            <input type="text" class="form-control" id="descripcion" [(ngModel)]="documento.descripcion"
+                name="descripcion" placeholder="Digite la descripcion" #descripcion="ngModel" />
+        </div>
+        <br>
+
+        <button class="btn btn-success" [disabled]="!documentosForm.form.valid">Guardar</button>
+    </form>
+</div>

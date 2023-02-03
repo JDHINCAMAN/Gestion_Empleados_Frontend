@@ -1,5 +1,5 @@
 <div class="col-md-6 offset-md-3">
-    <h3 class="text-center">Registro del cliente</h3>
+    <h3 class="text-center">Edición del cliente</h3>
     <form (ngSubmit)="onSubmit()" #empleadoForm="ngForm">
         <div class="form-group">
             <label>Tipo Documento: </label>
@@ -50,12 +50,3 @@
     </form>
     <br>
 </div>
-
-<!-- <script type="text/javascript">
-    $.getJSON("documentos", {}, function (data, q, t) {
-        console.log(data);
-        $.each(data, function (index, item) {
-            $("#id_reg_documento").append("<option value=" + index.id + ">" + item.descripcion + "</option>");
-        })
-    })
-</script> -->

@@ -1,0 +1,21 @@
+<h2>Lista de Documentos</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Descripcion</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let documento of documentos">
+            <td>{{documento.id}}</td>
+            <td>{{documento.descripcion}}</td>
+            <td>
+                <button (click)="actualizarDocumentos(documento.id)" class="btn btn-info">Editar</button>
+                <button (click)="eliminarDocumento(documento.id)" class="btn btn-danger"
+                    style="margin-left: 10px;">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
